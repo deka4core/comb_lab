@@ -34,4 +34,7 @@ def task_3():
         fout.write(f"Кол-во возможных слов длины 6, \nв которых 2 повторяется три раза: {count}")
 
 
-task_3()
+if __name__ == "__main__":
+    task_number = int(input("Введите номер подзадачи: "))
+    tasks = [task_1, task_2, task_3]
+    tasks[task_number - 1]()
